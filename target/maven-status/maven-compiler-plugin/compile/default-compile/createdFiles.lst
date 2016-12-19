@@ -1,0 +1,5 @@
+com\ecleague\adoringjoblivingmap\common\util\JsonDtoFlag.class
+com\ecleague\adoringjoblivingmap\controller\BasicController.class
+com\ecleague\adoringjoblivingmap\controller\WelcomeController.class
+com\ecleague\adoringjoblivingmap\SomeService.class
+com\ecleague\adoringjoblivingmap\common\util\JsonDto.class
