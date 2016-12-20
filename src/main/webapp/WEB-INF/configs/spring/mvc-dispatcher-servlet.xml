@@ -13,6 +13,7 @@
 
     <mvc:annotation-driven/>
 
+    <!--这里配置的资源映射-->
     <mvc:default-servlet-handler/>
 
     <context:component-scan base-package="com.ecleague.adoringjoblivingmap"></context:component-scan>
@@ -31,5 +32,18 @@
             </list>
         </property>
     </bean>
+
+<!--加这行之后，才可以映射除首页以外的其他页面-->
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!--<resources mapping="/resources/**" location="/resources/" />-->
+    <!--<resources mapping="/images/**" location="/images/" />-->
+    <!--<resources mapping="/js/**" location="/js/" />-->
 
 </beans>
